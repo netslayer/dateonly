@@ -100,7 +100,6 @@
 
   function momentToDate(m) {
     var dateStamp = +m.format('YYYYMMDD');
-    dateStamp -= 100; // moment's months start at 1, but DateOnly start at 0, so subtract 1 month.
     return numberToDate(dateStamp);
   }
 
